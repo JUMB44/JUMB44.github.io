@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Video Playback</title>
+    <script type="module" crossorigin src="/assets/cinema-BooiGyGL.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/video-utils-BTDqA1ss.js">
+    <link rel="stylesheet" crossorigin href="/assets/cinema-BOF78_Ep.css">
+  </head>
+  <body>
+    <main class="cinema">
+      <div class="media-stage">
+        <div class="loading-state" id="loadingState">
+          <div class="loader"></div>
+          <b>Loading video</b>
+          <small id="loadingDetail">Please wait…</small>
+        </div>
+        <div id="mediaMount" class="media-mount"></div>
+        <div class="video-error hidden" id="videoError" role="alert"></div>
+      </div>
+      <footer class="controls">
+        <span class="sound-hint" id="soundHint" aria-live="polite"></span>
+        <div class="control-actions">
+          <button id="soundButton" class="control-button hidden" type="button">Enable sound</button>
+          <button id="closeCinema" class="control-button" type="button">Close</button>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
